@@ -26,6 +26,7 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const TMUX: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
 	export const XDG_SEAT: string;
@@ -37,14 +38,15 @@ declare module '$env/static/private' {
 	export const OLDPWD: string;
 	export const DESKTOP_SESSION: string;
 	export const NVM_BIN: string;
+	export const TERM_PROGRAM_VERSION: string;
 	export const npm_package_json: string;
 	export const NVM_INC: string;
 	export const GTK_MODULES: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
-	export const SYSTEMD_EXEC_PID: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const GOROOT: string;
+	export const SYSTEMD_EXEC_PID: string;
 	export const COLORTERM: string;
 	export const COLOR: string;
 	export const NVM_DIR: string;
@@ -52,14 +54,14 @@ declare module '$env/static/private' {
 	export const MANDATORY_PATH: string;
 	export const GTK_IM_MODULE: string;
 	export const LOGNAME: string;
-	export const _: string;
 	export const WINDOWID: string;
+	export const _: string;
 	export const npm_config_prefix: string;
-	export const XDG_SESSION_CLASS: string;
 	export const DEFAULTS_PATH: string;
+	export const XDG_SESSION_CLASS: string;
+	export const TERM: string;
 	export const USERNAME: string;
 	export const XDG_SESSION_ID: string;
-	export const TERM: string;
 	export const npm_config_cache: string;
 	export const DOTNET_ROOT: string;
 	export const WINDOWPATH: string;
@@ -71,16 +73,17 @@ declare module '$env/static/private' {
 	export const XDG_RUNTIME_DIR: string;
 	export const DISPLAY: string;
 	export const LANG: string;
-	export const XMODIFIERS: string;
-	export const XDG_SESSION_DESKTOP: string;
+	export const TERM_PROGRAM: string;
 	export const XAUTHORITY: string;
+	export const XDG_SESSION_DESKTOP: string;
+	export const XMODIFIERS: string;
 	export const npm_lifecycle_script: string;
-	export const SHELL: string;
 	export const GOPATH: string;
+	export const SHELL: string;
 	export const npm_package_version: string;
 	export const npm_lifecycle_event: string;
-	export const QT_ACCESSIBILITY: string;
 	export const GDMSESSION: string;
+	export const QT_ACCESSIBILITY: string;
 	export const KITTY_WINDOW_ID: string;
 	export const GPG_AGENT_INFO: string;
 	export const QT_IM_MODULE: string;
@@ -89,11 +92,12 @@ declare module '$env/static/private' {
 	export const npm_config_init_module: string;
 	export const PWD: string;
 	export const npm_execpath: string;
+	export const NVM_CD_FLAGS: string;
 	export const XDG_CONFIG_DIRS: string;
 	export const XDG_DATA_DIRS: string;
-	export const NVM_CD_FLAGS: string;
 	export const npm_config_global_prefix: string;
 	export const npm_command: string;
+	export const TMUX_PANE: string;
 	export const EDITOR: string;
 	export const INIT_CWD: string;
 	export const NODE_ENV: string;
@@ -128,6 +132,7 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		TMUX: string;
 		USER: string;
 		npm_config_user_agent: string;
 		XDG_SEAT: string;
@@ -139,14 +144,15 @@ declare module '$env/dynamic/private' {
 		OLDPWD: string;
 		DESKTOP_SESSION: string;
 		NVM_BIN: string;
+		TERM_PROGRAM_VERSION: string;
 		npm_package_json: string;
 		NVM_INC: string;
 		GTK_MODULES: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
-		SYSTEMD_EXEC_PID: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		GOROOT: string;
+		SYSTEMD_EXEC_PID: string;
 		COLORTERM: string;
 		COLOR: string;
 		NVM_DIR: string;
@@ -154,14 +160,14 @@ declare module '$env/dynamic/private' {
 		MANDATORY_PATH: string;
 		GTK_IM_MODULE: string;
 		LOGNAME: string;
-		_: string;
 		WINDOWID: string;
+		_: string;
 		npm_config_prefix: string;
-		XDG_SESSION_CLASS: string;
 		DEFAULTS_PATH: string;
+		XDG_SESSION_CLASS: string;
+		TERM: string;
 		USERNAME: string;
 		XDG_SESSION_ID: string;
-		TERM: string;
 		npm_config_cache: string;
 		DOTNET_ROOT: string;
 		WINDOWPATH: string;
@@ -173,16 +179,17 @@ declare module '$env/dynamic/private' {
 		XDG_RUNTIME_DIR: string;
 		DISPLAY: string;
 		LANG: string;
-		XMODIFIERS: string;
-		XDG_SESSION_DESKTOP: string;
+		TERM_PROGRAM: string;
 		XAUTHORITY: string;
+		XDG_SESSION_DESKTOP: string;
+		XMODIFIERS: string;
 		npm_lifecycle_script: string;
-		SHELL: string;
 		GOPATH: string;
+		SHELL: string;
 		npm_package_version: string;
 		npm_lifecycle_event: string;
-		QT_ACCESSIBILITY: string;
 		GDMSESSION: string;
+		QT_ACCESSIBILITY: string;
 		KITTY_WINDOW_ID: string;
 		GPG_AGENT_INFO: string;
 		QT_IM_MODULE: string;
@@ -191,11 +198,12 @@ declare module '$env/dynamic/private' {
 		npm_config_init_module: string;
 		PWD: string;
 		npm_execpath: string;
+		NVM_CD_FLAGS: string;
 		XDG_CONFIG_DIRS: string;
 		XDG_DATA_DIRS: string;
-		NVM_CD_FLAGS: string;
 		npm_config_global_prefix: string;
 		npm_command: string;
+		TMUX_PANE: string;
 		EDITOR: string;
 		INIT_CWD: string;
 		NODE_ENV: string;
